@@ -1,0 +1,29 @@
+
+.about-text{
+    width: 100%;
+    background-color: var(--bg);
+}
+.about-text h1{
+    font-size: 23px;
+    text-align: center;
+    color: var(--head-letter-color);
+    font-family: var(--Font-famliy-one);
+    margin-bottom: 5px;
+}
+.about-text h3{
+    font-size: 20px;
+    font-family: var(--Font-famliy-one);
+    margin: 25px;
+    margin-bottom: 5px;
+}
+.about-text span{
+    font-size: 14px;
+    margin: 25px;
+}
+.img{
+    background-color: gray;
+    width: 100%;
+}
+.img img{
+    padding: 15px 15px 15px 15px;
+}
