@@ -18,35 +18,1295 @@
     "bathrooms": 1,
     "area": 65,
     "unit": "m²",
-    "images": ["images/apartment1_1.jpg", "images/apartment1_2.jpg"],
+    "images": ["/public/assets/images/properties/apartments/apartment-1.webp"],
     "features": ["Air Conditioning", "Balcony", "Parking"],
-    "agency_id": 101,
+    "agent_id": 301,
     "posted_date": "2025-11-10",
-    "available": true
+    "is_available": "yes",
+    "is_featured": "no",
+    "is_latest": "no"
   },
   {
     "id": 2,
     "title": {
-      "en": "Cozy Room for Students near ITC",
-      "km": "បន្ទប់សម្រាប់និស្សិតនៅជិតវិទ្យាស្ថានបច្ចេកវិទ្យាកម្ពុជា"
+      "en": "Studio Apartment in BKK1",
+      "km": "អាផាតមិនបន្ទប់តូចនៅ BKK1"
     },
-    "type": "room",
+    "type": "apartment",
     "purpose": "rent",
-    "price": 80,
+    "price": 450,
+    "currency": "USD",
+    "location": {
+      "city": "Phnom Penh",
+      "district": "BKK1",
+      "address": "Street 63, BKK1"
+    },
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "area": 45,
+    "unit": "m²",
+    "images": ["/public/assets/images/properties/apartments/apartment-2.webp"],
+    "features": ["Gym", "Elevator", "Security"],
+    "agent_id": 302,
+    "posted_date": "2025-11-11",
+    "is_available": "yes",
+    "is_featured": "yes",
+    "is_latest": "yes"
+  },
+  {
+    "id": 3,
+    "title": {
+      "en": "Spacious Condo in Toul Kork",
+      "km": "ខុនដូទូលំទូលាយនៅតួលគោក"
+    },
+    "type": "condo",
+    "purpose": "sale",
+    "price": 105000,
+    "currency": "USD",
+    "location": {
+      "city": "Phnom Penh",
+      "district": "Toul Kork",
+      "address": "Street 289"
+    },
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "area": 78,
+    "unit": "m²",
+    "images": ["/public/assets/images/properties/condos/condo-1.jpg"],
+    "features": ["Swimming Pool", "Gym", "Parking"],
+    "agent_id": 303,
+    "posted_date": "2025-11-12",
+    "is_available": "yes",
+    "is_featured": "no",
+    "is_latest": "no"
+  },
+  {
+    "id": 4,
+    "title": {
+      "en": "Luxury Villa in Chip Mong Landmark",
+      "km": "វីឡាធូល៌នៅ Chip Mong Landmark"
+    },
+    "type": "villa",
+    "purpose": "sale",
+    "price": 450000,
+    "currency": "USD",
+    "location": {
+      "city": "Phnom Penh",
+      "district": "Sen Sok",
+      "address": "Chip Mong Landmark"
+    },
+    "bedrooms": 5,
+    "bathrooms": 6,
+    "area": 320,
+    "unit": "m²",
+    "images": ["/public/assets/images/properties/villas/villa-1.webp"],
+    "features": ["Garden", "Parking", "Security"],
+    "agent_id": 304,
+    "posted_date": "2025-10-28",
+    "is_available": "yes",
+    "is_featured": "no",
+    "is_latest": "no"
+  },
+  {
+    "id": 5,
+    "title": {
+      "en": "Townhouse for Rent in Sen Sok",
+      "km": "ផ្ទះល្វែងឲ្យជួលនៅសែនសុខ"
+    },
+    "type": "house",
+    "purpose": "rent",
+    "price": 650,
+    "currency": "USD",
+    "location": {
+      "city": "Phnom Penh",
+      "district": "Sen Sok",
+      "address": "Street 1003"
+    },
+    "bedrooms": 3,
+    "bathrooms": 3,
+    "area": 120,
+    "unit": "m²",
+    "images": ["/public/assets/images/properties/houses/house-1.webp"],
+    "features": ["Parking", "Pet Friendly"],
+    "agent_id": 305,
+    "posted_date": "2025-11-05",
+    "is_available": "yes",
+    "is_featured": "yes",
+    "is_latest": "no"
+  },
+  {
+    "id": 6,
+    "title": {
+      "en": "Budget Apartment in Chbar Ampov",
+      "km": "អាផាតមិនតម្លៃសមរម្យនៅច្បារអំពៅ"
+    },
+    "type": "apartment",
+    "purpose": "rent",
+    "price": 280,
+    "currency": "USD",
+    "location": {
+      "city": "Phnom Penh",
+      "district": "Chbar Ampov",
+      "address": "National Road 1"
+    },
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "area": 40,
+    "unit": "m²",
+    "images": ["/public/assets/images/properties/apartments/apartment-3.jpg"],
+    "features": ["Parking"],
+    "agent_id": 306,
+    "posted_date": "2025-10-30",
+    "is_available": "yes",
+    "is_featured": "no",
+    "is_latest": "no"
+  },
+  {
+    "id": 7,
+    "title": {
+      "en": "Office Space in Daun Penh",
+      "km": "កន្លែងការិយាល័យនៅដូនពេញ"
+    },
+    "type": "commercial",
+    "purpose": "rent",
+    "price": 1200,
+    "currency": "USD",
+    "location": {
+      "city": "Phnom Penh",
+      "district": "Daun Penh",
+      "address": "Street 130"
+    },
+    "bedrooms": 0,
+    "bathrooms": 2,
+    "area": 150,
+    "unit": "m²",
+    "images": [
+      "/public/assets/images/properties/commercials/commercial-1.webp"
+    ],
+    "features": ["Elevator", "Parking"],
+    "agent_id": 307,
+    "posted_date": "2025-11-15",
+    "is_available": "yes",
+    "is_featured": "yes",
+    "is_latest": "yes"
+  },
+  {
+    "id": 8,
+    "title": {
+      "en": "Shophouse in Toul Tom Poung",
+      "km": "ផ្ទះអាជីវកម្មនៅទួលទំពូង"
+    },
+    "type": "shophouse",
+    "purpose": "sale",
+    "price": 280000,
+    "currency": "USD",
+    "location": {
+      "city": "Phnom Penh",
+      "district": "Toul Tom Poung",
+      "address": "Street 155"
+    },
+    "bedrooms": 4,
+    "bathrooms": 5,
+    "area": 200,
+    "unit": "m²",
+    "images": ["/public/assets/images/properties/shop_houses/shop_house-1.jpg"],
+    "features": ["Parking", "Business Area"],
+    "agent_id": 308,
+    "posted_date": "2025-11-13",
+    "is_available": "yes",
+    "is_featured": "no",
+    "is_latest": "no"
+  },
+  {
+    "id": 9,
+    "title": { "en": "Condo with Pool View", "km": "ខុនដូឃើញទឹកស៊ូវិមិញ" },
+    "type": "condo",
+    "purpose": "rent",
+    "price": 600,
+    "currency": "USD",
+    "location": {
+      "city": "Phnom Penh",
+      "district": "BKK2",
+      "address": "Street 310"
+    },
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "area": 55,
+    "unit": "m²",
+    "images": ["/public/assets/images/properties/condos/condo-2.webp"],
+    "features": ["Swimming Pool", "Gym"],
+    "agent_id": 309,
+    "posted_date": "2025-09-10",
+    "is_available": "yes",
+    "is_featured": "no",
+    "is_latest": "no"
+  },
+  {
+    "id": 10,
+    "title": {
+      "en": "Serviced Apartment in Russian Market",
+      "km": "អាផាតមិនសេវាកម្មនៅផ្សារអឺរ៉ុប"
+    },
+    "type": "apartment",
+    "purpose": "rent",
+    "price": 500,
+    "currency": "USD",
+    "location": {
+      "city": "Phnom Penh",
+      "district": "Toul Tom Poung",
+      "address": "Street 440"
+    },
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "area": 50,
+    "unit": "m²",
+    "images": ["/public/assets/images/properties/apartments/apartment-1.webp"],
+    "features": ["Cleaning Service", "Security"],
+    "agent_id": 310,
+    "posted_date": "2025-11-07",
+    "is_available": "yes",
+    "is_featured": "yes",
+    "is_latest": "no"
+  },
+  {
+    "id": 11,
+    "title": { "en": "Land for Sale in Kandal", "km": "ដីលក់នៅខណ្ឌកណ្តាល" },
+    "type": "land",
+    "purpose": "sale",
+    "price": 75000,
+    "currency": "USD",
+    "location": {
+      "city": "Kandal",
+      "district": "Ta Khmao",
+      "address": "National Road 2"
+    },
+    "bedrooms": 0,
+    "bathrooms": 0,
+    "area": 500,
+    "unit": "m²",
+    "images": ["/public/assets/images/properties/lands/land-1.jpg"],
+    "features": ["Main Road Access"],
+    "agent_id": 311,
+    "posted_date": "2025-10-20",
+    "is_available": "yes",
+    "is_featured": "no",
+    "is_latest": "no"
+  },
+  {
+    "id": 12,
+    "title": {
+      "en": "Affordable Condo in Chroy Changvar",
+      "km": "ខុនដូតម្លៃសមរម្យនៅជ្រោយចង្វារ"
+    },
+    "type": "condo",
+    "purpose": "rent",
+    "price": 380,
+    "currency": "USD",
+    "location": {
+      "city": "Phnom Penh",
+      "district": "Chroy Changvar",
+      "address": "National Road 6A"
+    },
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "area": 48,
+    "unit": "m²",
+    "images": ["/public/assets/images/properties/condos/condo-3.jpg"],
+    "features": ["Gym", "Balcony"],
+    "agent_id": 312,
+    "posted_date": "2025-11-14",
+    "is_available": "yes",
+    "is_featured": "no",
+    "is_latest": "yes"
+  },
+  {
+    "id": 13,
+    "title": {
+      "en": "Villa in Borey Peng Huoth",
+      "km": "វីឡាក្នុងបុរី ប៉េងហួត"
+    },
+    "type": "villa",
+    "purpose": "sale",
+    "price": 390000,
+    "currency": "USD",
+    "location": {
+      "city": "Phnom Penh",
+      "district": "Chbar Ampov",
+      "address": "Borey Peng Huoth Beoung Snor"
+    },
+    "bedrooms": 4,
+    "bathrooms": 5,
+    "area": 280,
+    "unit": "m²",
+    "images": ["/public/assets/images/properties/villas/villa-2.webp"],
+    "features": ["Garden", "Parking", "Security"],
+    "agent_id": 313,
+    "posted_date": "2025-11-12",
+    "is_available": "yes",
+    "is_featured": "yes",
+    "is_latest": "no"
+  },
+  {
+    "id": 14,
+    "title": { "en": "Penthouse in BKK1", "km": "ផេនថោសអាផាតមិននៅ BKK1" },
+    "type": "condo",
+    "purpose": "sale",
+    "price": 220000,
+    "currency": "USD",
+    "location": {
+      "city": "Phnom Penh",
+      "district": "BKK1",
+      "address": "Street 310"
+    },
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "area": 110,
+    "unit": "m²",
+    "images": ["/public/assets/images/properties/condos/condo-1.jpg"],
+    "features": ["Rooftop Access", "Pool", "Gym"],
+    "agent_id": 314,
+    "posted_date": "2025-11-01",
+    "is_available": "yes",
+    "is_featured": "no",
+    "is_latest": "no"
+  },
+  {
+    "id": 15,
+    "title": {
+      "en": "Apartment near Eden Garden",
+      "km": "អាផាតមិនជិត Eden Garden"
+    },
+    "type": "apartment",
+    "purpose": "rent",
+    "price": 420,
+    "currency": "USD",
+    "location": {
+      "city": "Phnom Penh",
+      "district": "Daun Penh",
+      "address": "Street 214"
+    },
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "area": 52,
+    "unit": "m²",
+    "images": ["/public/assets/images/properties/apartments/apartment-2.webp"],
+    "features": ["Balcony", "Elevator"],
+    "agent_id": 315,
+    "posted_date": "2025-11-09",
+    "is_available": "yes",
+    "is_featured": "no",
+    "is_latest": "no"
+  },
+  {
+    "id": 16,
+    "title": {
+      "en": "Spacious House near ISPP",
+      "km": "ផ្ទះធំទូលាយនៅជិត ISPP"
+    },
+    "type": "house",
+    "purpose": "rent",
+    "price": 1500,
+    "currency": "USD",
+    "location": {
+      "city": "Phnom Penh",
+      "district": "Meanchey",
+      "address": "Street 371"
+    },
+    "bedrooms": 5,
+    "bathrooms": 6,
+    "area": 280,
+    "unit": "m²",
+    "images": ["/public/assets/images/properties/houses/house-2.webp"],
+    "features": ["Parking", "Garden"],
+    "agent_id": 316,
+    "posted_date": "2025-11-04",
+    "is_available": "yes",
+    "is_featured": "no",
+    "is_latest": "no"
+  },
+  {
+    "id": 17,
+    "title": {
+      "en": "Studio Apartment near CIA School",
+      "km": "អាផាតមិនបន្ទប់តូចនៅជិតសាលា CIA"
+    },
+    "type": "apartment",
+    "purpose": "rent",
+    "price": 260,
+    "currency": "USD",
+    "location": {
+      "city": "Phnom Penh",
+      "district": "Sen Sok",
+      "address": "Street 1003"
+    },
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "area": 35,
+    "unit": "m²",
+    "images": ["/public/assets/images/properties/apartments/apartment-3.jpg"],
+    "features": ["Security"],
+    "agent_id": 317,
+    "posted_date": "2025-11-08",
+    "is_available": "yes",
+    "is_featured": "no",
+    "is_latest": "no"
+  },
+  {
+    "id": 18,
+    "title": {
+      "en": "Elegant Condo in Diamond Island",
+      "km": "ខុនដូស្រស់ស្អាតនៅកោះពេជ្រ"
+    },
+    "type": "condo",
+    "purpose": "rent",
+    "price": 950,
+    "currency": "USD",
+    "location": {
+      "city": "Phnom Penh",
+      "district": "Tonle Bassac",
+      "address": "Diamond Island"
+    },
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "area": 90,
+    "unit": "m²",
+    "images": ["/public/assets/images/properties/condos/condo-2.webp"],
+    "features": ["Pool", "Gym", "River View"],
+    "agent_id": 318,
+    "posted_date": "2025-10-22",
+    "is_available": "yes",
+    "is_featured": "yes",
+    "is_latest": "no"
+  },
+  {
+    "id": 19,
+    "title": { "en": "Shop Space for Rent", "km": "ទីតាំងអាជីវកម្មឲ្យជួល" },
+    "type": "commercial",
+    "purpose": "rent",
+    "price": 1500,
+    "currency": "USD",
+    "location": {
+      "city": "Phnom Penh",
+      "district": "Prampi Makara",
+      "address": "Orussey Market"
+    },
+    "bedrooms": 0,
+    "bathrooms": 1,
+    "area": 60,
+    "unit": "m²",
+    "images": ["/public/assets/images/properties/commercials/commercial-2.jpg"],
+    "features": ["Main Road Access"],
+    "agent_id": 319,
+    "posted_date": "2025-11-10",
+    "is_available": "yes",
+    "is_featured": "no",
+    "is_latest": "no"
+  },
+  {
+    "id": 20,
+    "title": {
+      "en": "Family House in Chroy Changvar",
+      "km": "ផ្ទះគ្រួសារនៅជ្រោយចង្វារ"
+    },
+    "type": "house",
+    "purpose": "sale",
+    "price": 180000,
+    "currency": "USD",
+    "location": {
+      "city": "Phnom Penh",
+      "district": "Chroy Changvar",
+      "address": "Street 6A"
+    },
+    "bedrooms": 4,
+    "bathrooms": 3,
+    "area": 160,
+    "unit": "m²",
+    "images": ["/public/assets/images/properties/houses/house-3.jpg"],
+    "features": ["Balcony", "Parking"],
+    "agent_id": 320,
+    "posted_date": "2025-10-30",
+    "is_available": "yes",
+    "is_featured": "no",
+    "is_latest": "no"
+  },
+  {
+    "id": 21,
+    "title": { "en": "Land for Sale in Siem Reap", "km": "ដីលក់នៅសៀមរាប" },
+    "type": "land",
+    "purpose": "sale",
+    "price": 50000,
+    "currency": "USD",
+    "location": {
+      "city": "Siem Reap",
+      "district": "Svay Dangkum",
+      "address": "Ring Road"
+    },
+    "bedrooms": 0,
+    "bathrooms": 0,
+    "area": 450,
+    "unit": "m²",
+    "images": ["/public/assets/images/properties/lands/land-2.webp"],
+    "features": ["Quiet Area"],
+    "agent_id": 321,
+    "posted_date": "2025-10-29",
+    "is_available": "yes",
+    "is_featured": "no",
+    "is_latest": "no"
+  },
+  {
+    "id": 22,
+    "title": { "en": "Villa with Pool", "km": "វីឡាមានអាងហែលទឹក" },
+    "type": "villa",
+    "purpose": "rent",
+    "price": 2500,
+    "currency": "USD",
+    "location": {
+      "city": "Phnom Penh",
+      "district": "Chamkarmon",
+      "address": "Street 51"
+    },
+    "bedrooms": 5,
+    "bathrooms": 5,
+    "area": 350,
+    "unit": "m²",
+    "images": ["/public/assets/images/properties/villas/villa-3.webp"],
+    "features": ["Pool", "Garden", "Parking"],
+    "agent_id": 322,
+    "posted_date": "2025-11-03",
+    "is_available": "yes",
+    "is_featured": "yes",
+    "is_latest": "no"
+  },
+  {
+    "id": 23,
+    "title": { "en": "Modern Condo in Sen Sok", "km": "ខុនដូទំនើបនៅសែនសុខ" },
+    "type": "condo",
+    "purpose": "rent",
+    "price": 420,
+    "currency": "USD",
+    "location": {
+      "city": "Phnom Penh",
+      "district": "Sen Sok",
+      "address": "Street 1928"
+    },
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "area": 48,
+    "unit": "m²",
+    "images": ["/public/assets/images/properties/condos/condo-3.jpg"],
+    "features": ["Parking", "Gym"],
+    "agent_id": 323,
+    "posted_date": "2025-11-11",
+    "is_available": "yes",
+    "is_featured": "no",
+    "is_latest": "yes"
+  },
+  {
+    "id": 24,
+    "title": {
+      "en": "Townhouse near AEON Sen Sok",
+      "km": "ផ្ទះល្វែងនៅជិត AEON Sen Sok"
+    },
+    "type": "house",
+    "purpose": "sale",
+    "price": 160000,
+    "currency": "USD",
+    "location": {
+      "city": "Phnom Penh",
+      "district": "Sen Sok",
+      "address": "Street 1003"
+    },
+    "bedrooms": 3,
+    "bathrooms": 3,
+    "area": 135,
+    "unit": "m²",
+    "images": ["/public/assets/images/properties/houses/house-1.webp"],
+    "features": ["Parking"],
+    "agent_id": 324,
+    "posted_date": "2025-11-07",
+    "is_available": "yes",
+    "is_featured": "no",
+    "is_latest": "no"
+  },
+  {
+    "id": 25,
+    "title": {
+      "en": "Budget Apartment in Meanchey",
+      "km": "អាផាតមិនតម្លៃសមរម្យនៅមានជ័យ"
+    },
+    "type": "apartment",
+    "purpose": "rent",
+    "price": 230,
+    "currency": "USD",
+    "location": {
+      "city": "Phnom Penh",
+      "district": "Meanchey",
+      "address": "Street 371"
+    },
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "area": 38,
+    "unit": "m²",
+    "images": ["/public/assets/images/properties/apartments/apartment-1.webp"],
+    "features": ["Parking"],
+    "agent_id": 325,
+    "posted_date": "2025-11-02",
+    "is_available": "yes",
+    "is_featured": "no",
+    "is_latest": "no"
+  },
+  {
+    "id": 26,
+    "title": { "en": "Luxury Condo in BKK1", "km": "ខុនដូធូល៌នៅ BKK1" },
+    "type": "condo",
+    "purpose": "rent",
+    "price": 1100,
+    "currency": "USD",
+    "location": {
+      "city": "Phnom Penh",
+      "district": "BKK1",
+      "address": "Street 360"
+    },
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "area": 95,
+    "unit": "m²",
+    "images": ["/public/assets/images/properties/condos/condo-1.jpg"],
+    "features": ["Gym", "Pool", "Security"],
+    "agent_id": 326,
+    "posted_date": "2025-11-09",
+    "is_available": "yes",
+    "is_featured": "no",
+    "is_latest": "no"
+  },
+  {
+    "id": 27,
+    "title": {
+      "en": "Villa in Borey Chip Mong",
+      "km": "វីឡាក្នុងបុរី Chip Mong"
+    },
+    "type": "villa",
+    "purpose": "sale",
+    "price": 420000,
+    "currency": "USD",
+    "location": {
+      "city": "Phnom Penh",
+      "district": "Sen Sok",
+      "address": "Chip Mong Borey"
+    },
+    "bedrooms": 4,
+    "bathrooms": 5,
+    "area": 290,
+    "unit": "m²",
+    "images": ["/public/assets/images/properties/villas/villa-1.webp"],
+    "features": ["Parking", "Garden"],
+    "agent_id": 327,
+    "posted_date": "2025-10-28",
+    "is_available": "yes",
+    "is_featured": "no",
+    "is_latest": "no"
+  },
+  {
+    "id": 28,
+    "title": {
+      "en": "Shophouse near Phnom Penh Thmey",
+      "km": "ផ្ទះអាជីវកម្មនៅជិតភ្នំពេញថ្មី"
+    },
+    "type": "shophouse",
+    "purpose": "sale",
+    "price": 250000,
+    "currency": "USD",
+    "location": {
+      "city": "Phnom Penh",
+      "district": "Sen Sok",
+      "address": "Phnom Penh Thmey"
+    },
+    "bedrooms": 4,
+    "bathrooms": 5,
+    "area": 185,
+    "unit": "m²",
+    "images": [
+      "/public/assets/images/properties/shop_houses/shop_house-2.webp"
+    ],
+    "features": ["Parking", "Business Area"],
+    "agent_id": 328,
+    "posted_date": "2025-11-06",
+    "is_available": "yes",
+    "is_featured": "no",
+    "is_latest": "no"
+  },
+  {
+    "id": 29,
+    "title": { "en": "Condo with River View", "km": "ខុនដូទេសភាពទន្លេ" },
+    "type": "condo",
+    "purpose": "rent",
+    "price": 750,
+    "currency": "USD",
+    "location": {
+      "city": "Phnom Penh",
+      "district": "Chroy Changvar",
+      "address": "Riverside"
+    },
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "area": 80,
+    "unit": "m²",
+    "images": ["/public/assets/images/properties/condos/condo-2.webp"],
+    "features": ["River View", "Gym"],
+    "agent_id": 329,
+    "posted_date": "2025-11-13",
+    "is_available": "yes",
+    "is_featured": "yes",
+    "is_latest": "yes"
+  },
+  {
+    "id": 30,
+    "title": {
+      "en": "Apartment near Olympic Stadium",
+      "km": "អាផាតមិននៅជិតរោងកីឡាអូឡាំពិក"
+    },
+    "type": "apartment",
+    "purpose": "rent",
+    "price": 350,
+    "currency": "USD",
+    "location": {
+      "city": "Phnom Penh",
+      "district": "Prampi Makara",
+      "address": "Street 182"
+    },
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "area": 48,
+    "unit": "m²",
+    "images": ["/public/assets/images/properties/apartments/apartment-2.webp"],
+    "features": ["Balcony"],
+    "agent_id": 330,
+    "posted_date": "2025-11-11",
+    "is_available": "yes",
+    "is_featured": "no",
+    "is_latest": "no"
+  },
+  {
+    "id": 31,
+    "title": {
+      "en": "Townhouse for Rent in Toul Kork",
+      "km": "ផ្ទះល្វែងឲ្យជួលនៅទួលគោក"
+    },
+    "type": "house",
+    "purpose": "rent",
+    "price": 900,
     "currency": "USD",
     "location": {
       "city": "Phnom Penh",
       "district": "Toul Kork",
       "address": "Street 598"
     },
+    "bedrooms": 4,
+    "bathrooms": 4,
+    "area": 160,
+    "unit": "m²",
+    "images": ["/public/assets/images/properties/houses/house-2.webp"],
+    "features": ["Parking"],
+    "agent_id": 301,
+    "posted_date": "2025-11-12",
+    "is_available": "yes",
+    "is_featured": "no",
+    "is_latest": "no"
+  },
+  {
+    "id": 32,
+    "title": {
+      "en": "Affordable Studio in Chbar Ampov",
+      "km": "អាផាតមិនតម្លៃសមរម្យនៅច្បារអំពៅ"
+    },
+    "type": "apartment",
+    "purpose": "rent",
+    "price": 250,
+    "currency": "USD",
+    "location": {
+      "city": "Phnom Penh",
+      "district": "Chbar Ampov",
+      "address": "Street 1"
+    },
     "bedrooms": 1,
     "bathrooms": 1,
-    "area": 20,
+    "area": 35,
     "unit": "m²",
-    "images": ["images/room1_1.jpg"],
-    "features": ["Fan", "Shared Bathroom"],
-    "agency_id": 102,
+    "images": ["/public/assets/images/properties/apartments/apartment-3.jpg"],
+    "features": ["Parking"],
+    "agent_id": 302,
+    "posted_date": "2025-11-11",
+    "is_available": "yes",
+    "is_featured": "no",
+    "is_latest": "no"
+  },
+  {
+    "id": 33,
+    "title": {
+      "en": "Serviced Apartment in BKK2",
+      "km": "អាផាតមិនសេវាកម្មនៅ BKK2"
+    },
+    "type": "apartment",
+    "purpose": "rent",
+    "price": 480,
+    "currency": "USD",
+    "location": {
+      "city": "Phnom Penh",
+      "district": "BKK2",
+      "address": "Street 300"
+    },
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "area": 50,
+    "unit": "m²",
+    "images": ["/public/assets/images/properties/apartments/apartment-1.webp"],
+    "features": ["Cleaning", "Parking"],
+    "agent_id": 303,
     "posted_date": "2025-11-09",
-    "available": false
+    "is_available": "yes",
+    "is_featured": "no",
+    "is_latest": "no"
+  },
+  {
+    "id": 34,
+    "title": { "en": "Villa for Sale in Siem Reap", "km": "វីឡាលក់នៅសៀមរាប" },
+    "type": "villa",
+    "purpose": "sale",
+    "price": 250000,
+    "currency": "USD",
+    "location": {
+      "city": "Siem Reap",
+      "district": "Sala Kamreuk",
+      "address": "Road 60"
+    },
+    "bedrooms": 4,
+    "bathrooms": 5,
+    "area": 220,
+    "unit": "m²",
+    "images": ["/public/assets/images/properties/villas/villa-2.webp"],
+    "features": ["Garden", "Parking"],
+    "agent_id": 304,
+    "posted_date": "2025-11-08",
+    "is_available": "yes",
+    "is_featured": "no",
+    "is_latest": "no"
+  },
+  {
+    "id": 35,
+    "title": { "en": "Condo in Olympia City", "km": "ខុនដូក្នុង Olympia City" },
+    "type": "condo",
+    "purpose": "rent",
+    "price": 550,
+    "currency": "USD",
+    "location": {
+      "city": "Phnom Penh",
+      "district": "Prampi Makara",
+      "address": "Olympia City"
+    },
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "area": 55,
+    "unit": "m²",
+    "images": ["/public/assets/images/properties/condos/condo-3.jpg"],
+    "features": ["Gym", "Pool"],
+    "agent_id": 305,
+    "posted_date": "2025-11-12",
+    "is_available": "yes",
+    "is_featured": "yes",
+    "is_latest": "no"
+  },
+  {
+    "id": 36,
+    "title": {
+      "en": "Affordable House in Kandal",
+      "km": "ផ្ទះតម្លៃសមរម្យនៅកណ្តាល"
+    },
+    "type": "house",
+    "purpose": "sale",
+    "price": 58000,
+    "currency": "USD",
+    "location": {
+      "city": "Kandal",
+      "district": "Takmao",
+      "address": "Street 21"
+    },
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "area": 75,
+    "unit": "m²",
+    "images": ["/public/assets/images/properties/houses/house-3.jpg"],
+    "features": ["Parking"],
+    "agent_id": 306,
+    "posted_date": "2025-10-21",
+    "is_available": "yes",
+    "is_featured": "no",
+    "is_latest": "no"
+  },
+  {
+    "id": 37,
+    "title": {
+      "en": "Luxury Condo in The Bridge",
+      "km": "ខុនដូធូល៌នៅ The Bridge"
+    },
+    "type": "condo",
+    "purpose": "rent",
+    "price": 900,
+    "currency": "USD",
+    "location": {
+      "city": "Phnom Penh",
+      "district": "Tonle Bassac",
+      "address": "The Bridge"
+    },
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "area": 65,
+    "unit": "m²",
+    "images": ["/public/assets/images/properties/condos/condo-1.jpg"],
+    "features": ["Gym", "Pool", "Parking"],
+    "agent_id": 307,
+    "posted_date": "2025-11-13",
+    "is_available": "yes",
+    "is_featured": "no",
+    "is_latest": "yes"
+  },
+  {
+    "id": 38,
+    "title": {
+      "en": "Apartment near Sovanna Mall",
+      "km": "អាផាតមិននៅជិត Sovanna Mall"
+    },
+    "type": "apartment",
+    "purpose": "rent",
+    "price": 320,
+    "currency": "USD",
+    "location": {
+      "city": "Phnom Penh",
+      "district": "Meanchey",
+      "address": "Street 217"
+    },
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "area": 42,
+    "unit": "m²",
+    "images": ["/public/assets/images/properties/apartments/apartment-2.webp"],
+    "features": ["Parking"],
+    "agent_id": 308,
+    "posted_date": "2025-11-05",
+    "is_available": "yes",
+    "is_featured": "no",
+    "is_latest": "no"
+  },
+  {
+    "id": 39,
+    "title": {
+      "en": "House near Phnom Penh International Airport",
+      "km": "ផ្ទះនៅជិតអាកាសយានដ្ឋានភ្នំពេញ"
+    },
+    "type": "house",
+    "purpose": "rent",
+    "price": 850,
+    "currency": "USD",
+    "location": {
+      "city": "Phnom Penh",
+      "district": "Pou Senchey",
+      "address": "Russian Blvd"
+    },
+    "bedrooms": 3,
+    "bathrooms": 3,
+    "area": 130,
+    "unit": "m²",
+    "images": ["/public/assets/images/properties/houses/house-1.webp"],
+    "features": ["Parking", "Garden"],
+    "agent_id": 309,
+    "posted_date": "2025-11-10",
+    "is_available": "yes",
+    "is_featured": "no",
+    "is_latest": "no"
+  },
+  {
+    "id": 40,
+    "title": {
+      "en": "Condo near Central Market",
+      "km": "ខុនដូជិតផ្សារ Sentral"
+    },
+    "type": "condo",
+    "purpose": "rent",
+    "price": 650,
+    "currency": "USD",
+    "location": {
+      "city": "Phnom Penh",
+      "district": "Daun Penh",
+      "address": "Central Market Area"
+    },
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "area": 60,
+    "unit": "m²",
+    "images": ["/public/assets/images/properties/condos/condo-2.webp"],
+    "features": ["Elevator", "Security"],
+    "agent_id": 310,
+    "posted_date": "2025-11-14",
+    "is_available": "yes",
+    "is_featured": "no",
+    "is_latest": "yes"
+  },
+  {
+    "id": 41,
+    "title": { "en": "Land in Kampot Riverside", "km": "ដីនៅជិតទន្លេកំពត" },
+    "type": "land",
+    "purpose": "sale",
+    "price": 90000,
+    "currency": "USD",
+    "location": {
+      "city": "Kampot",
+      "district": "Riverside",
+      "address": "Riverside Road"
+    },
+    "bedrooms": 0,
+    "bathrooms": 0,
+    "area": 600,
+    "unit": "m²",
+    "images": ["/public/assets/images/properties/lands/land-3.webp"],
+    "features": ["Riverfront"],
+    "agent_id": 311,
+    "posted_date": "2025-10-20",
+    "is_available": "yes",
+    "is_featured": "no",
+    "is_latest": "no"
+  },
+  {
+    "id": 42,
+    "title": { "en": "Modern Condo in BKK3", "km": "ខុនដូទំនើបនៅ BKK3" },
+    "type": "condo",
+    "purpose": "rent",
+    "price": 500,
+    "currency": "USD",
+    "location": {
+      "city": "Phnom Penh",
+      "district": "BKK3",
+      "address": "Street 456"
+    },
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "area": 55,
+    "unit": "m²",
+    "images": ["/public/assets/images/properties/condos/condo-3.jpg"],
+    "features": ["Gym", "Security"],
+    "agent_id": 312,
+    "posted_date": "2025-11-13",
+    "is_available": "yes",
+    "is_featured": "yes",
+    "is_latest": "yes"
+  },
+  {
+    "id": 43,
+    "title": { "en": "Shophouse in Toul Kork", "km": "ផ្ទះអាជីវកម្មនៅទួលគោក" },
+    "type": "shophouse",
+    "purpose": "sale",
+    "price": 290000,
+    "currency": "USD",
+    "location": {
+      "city": "Phnom Penh",
+      "district": "Toul Kork",
+      "address": "TK Avenue Area"
+    },
+    "bedrooms": 4,
+    "bathrooms": 4,
+    "area": 210,
+    "unit": "m²",
+    "images": [
+      "/public/assets/images/properties/shop_houses/shop_house-3.webp"
+    ],
+    "features": ["Business Area"],
+    "agent_id": 313,
+    "posted_date": "2025-10-30",
+    "is_available": "yes",
+    "is_featured": "no",
+    "is_latest": "no"
+  },
+  {
+    "id": 44,
+    "title": {
+      "en": "Apartment near Royal Palace",
+      "km": "អាផាតមិននៅជិតព្រះបរមរាជវាំង"
+    },
+    "type": "apartment",
+    "purpose": "rent",
+    "price": 480,
+    "currency": "USD",
+    "location": {
+      "city": "Phnom Penh",
+      "district": "Daun Penh",
+      "address": "Street 240"
+    },
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "area": 50,
+    "unit": "m²",
+    "images": ["/public/assets/images/properties/apartments/apartment-3.jpg"],
+    "features": ["Balcony"],
+    "agent_id": 314,
+    "posted_date": "2025-11-10",
+    "is_available": "yes",
+    "is_featured": "no",
+    "is_latest": "no"
+  },
+  {
+    "id": 45,
+    "title": {
+      "en": "Townhouse near Aeon Mall 3",
+      "km": "ផ្ទះល្វែងនៅជិត Aeon Mall 3"
+    },
+    "type": "house",
+    "purpose": "rent",
+    "price": 720,
+    "currency": "USD",
+    "location": {
+      "city": "Phnom Penh",
+      "district": "Meanchey",
+      "address": "Street 60m"
+    },
+    "bedrooms": 3,
+    "bathrooms": 3,
+    "area": 125,
+    "unit": "m²",
+    "images": ["/public/assets/images/properties/houses/house-2.webp"],
+    "features": ["Parking"],
+    "agent_id": 315,
+    "posted_date": "2025-11-09",
+    "is_available": "yes",
+    "is_featured": "no",
+    "is_latest": "no"
+  },
+  {
+    "id": 46,
+    "title": { "en": "Condo near Aeon 1", "km": "ខុនដូជិត Aeon 1" },
+    "type": "condo",
+    "purpose": "sale",
+    "price": 120000,
+    "currency": "USD",
+    "location": {
+      "city": "Phnom Penh",
+      "district": "Chamkarmon",
+      "address": "Street 63"
+    },
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "area": 55,
+    "unit": "m²",
+    "images": ["/public/assets/images/properties/condos/condo-1.jpg"],
+    "features": ["Gym", "Pool"],
+    "agent_id": 316,
+    "posted_date": "2025-11-12",
+    "is_available": "yes",
+    "is_featured": "no",
+    "is_latest": "no"
+  },
+  {
+    "id": 47,
+    "title": {
+      "en": "Luxury Villa in Borey Orkide",
+      "km": "វីឡាធូល៌នៅបុរីអ័រគីដេ"
+    },
+    "type": "villa",
+    "purpose": "sale",
+    "price": 520000,
+    "currency": "USD",
+    "location": {
+      "city": "Phnom Penh",
+      "district": "Sen Sok",
+      "address": "Borey Orkide"
+    },
+    "bedrooms": 6,
+    "bathrooms": 7,
+    "area": 380,
+    "unit": "m²",
+    "images": ["/public/assets/images/properties/villas/villa-3.webp"],
+    "features": ["Garden", "Parking"],
+    "agent_id": 317,
+    "posted_date": "2025-10-22",
+    "is_available": "yes",
+    "is_featured": "no",
+    "is_latest": "no"
+  },
+  {
+    "id": 48,
+    "title": { "en": "Condo near Eden Garden", "km": "ខុនដូជិត Eden Garden" },
+    "type": "condo",
+    "purpose": "rent",
+    "price": 580,
+    "currency": "USD",
+    "location": {
+      "city": "Phnom Penh",
+      "district": "Daun Penh",
+      "address": "Street 214"
+    },
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "area": 60,
+    "unit": "m²",
+    "images": ["/public/assets/images/properties/condos/condo-2.webp"],
+    "features": ["Gym", "Security"],
+    "agent_id": 318,
+    "posted_date": "2025-11-11",
+    "is_available": "yes",
+    "is_featured": "no",
+    "is_latest": "no"
+  },
+  {
+    "id": 49,
+    "title": {
+      "en": "Commercial Space near Orussey Market",
+      "km": "កន្លែងអាជីវកម្មនៅជិតផ្សារអូររក្សី"
+    },
+    "type": "commercial",
+    "purpose": "rent",
+    "price": 1800,
+    "currency": "USD",
+    "location": {
+      "city": "Phnom Penh",
+      "district": "Prampi Makara",
+      "address": "Orussey"
+    },
+    "bedrooms": 0,
+    "bathrooms": 1,
+    "area": 85,
+    "unit": "m²",
+    "images": [
+      "/public/assets/images/properties/commercials/commercial-3.webp"
+    ],
+    "features": ["Main Road Access"],
+    "agent_id": 319,
+    "posted_date": "2025-10-29",
+    "is_available": "yes",
+    "is_featured": "no",
+    "is_latest": "no"
+  },
+  {
+    "id": 50,
+    "title": {
+      "en": "Modern Apartment near Royal University of Phnom Penh",
+      "km": "អាផាតមិនទំនើបនៅជិតសាកលវិទ្យាល័យភ្នំពេញ"
+    },
+    "type": "apartment",
+    "purpose": "rent",
+    "price": 370,
+    "currency": "USD",
+    "location": {
+      "city": "Phnom Penh",
+      "district": "Tuol Kork",
+      "address": "Russian Blvd"
+    },
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "area": 45,
+    "unit": "m²",
+    "images": ["/public/assets/images/properties/apartments/apartment-1.webp"],
+    "features": ["Parking"],
+    "agent_id": 320,
+    "posted_date": "2025-11-13",
+    "is_available": "yes",
+    "is_featured": "no",
+    "is_latest": "yes"
   }
 ]

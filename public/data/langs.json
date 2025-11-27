@@ -17,13 +17,11 @@
       "purpose": "Purpose",
       "purpose_rent": "Rent",
       "purpose_buy": "Buy",
-
       "type": "Type",
       "type_any": "Any type",
       "type_room": "Room",
       "type_apartment": "Apartment",
       "type_house": "House",
-
       "city": "City",
       "price_range": "Price Range"
     },
