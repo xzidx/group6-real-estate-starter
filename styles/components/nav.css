@@ -23,13 +23,13 @@ button {
   border: 1px solid var(--line);
   border-radius: var(--radius);
   padding: 10px 15px;
-  font-family: var(--font-family-one);
 }
 
 .nav__toggle {
   display: flex;
   align-items: center;
   gap: 5px;
+  font-family: var(--font-family);
 }
 
 .nav__sidebar-item {
@@ -38,7 +38,7 @@ button {
 
 .nav__list {
   display: flex;
-  gap: 1rem;
+  gap: 30px;
   list-style: none;
   margin: 0;
   padding: 8px 16px;
@@ -71,7 +71,6 @@ button {
 
 .nav__link {
   display: block;
-  font-family: var(--font-family-one);
 }
 
 .menu__button {
@@ -93,6 +92,9 @@ button {
   }
   .menu__button {
     display: block;
+  }
+  button {
+    display: none;
   }
   
 }

@@ -19,7 +19,7 @@
     <link href="https://unpkg.com/slim-select@latest/dist/slimselect.css" rel="stylesheet">
 
     <style>
-    @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
     </style>
 </head>
 
@@ -28,7 +28,7 @@
     
     <nav class="nav">
         <!-- ==== NAV: SIDEBAR ==== -->
-         <ul class="nav__list nav__sidebar">
+        <ul class="nav__list nav__sidebar">
             <li onclick=hideSidebar()><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fff"><path d="m291-240-51-51 189-189-189-189 51-51 189 189 189-189 51 51-189 189 189 189-51 51-189-189-189 189Z"/></svg></a></li>
             <li class="nav__item"><a href="#" class="nav__link nav__sidebar-item">Home</a></li>
             <li class="nav__item"><a href="#" class="nav__link nav__sidebar-item">Rent</a></li>
@@ -38,7 +38,7 @@
             <li class="nav__item"><a href="#" class="nav__link nav__sidebar-item">Contact</a></li>
         </ul>
         <!-- ===== NAV ===== -->
-        <div class="nav__bar container">
+        <div class="nav__bar">
             <a href="/" class="nav__brand"><img src="public/assets/images/company/image 2.png" alt=""></a>
             <ul class="nav__list">
                 <li class="nav__item hideOnMobile"><a href="#" class="nav__link">Home</a></li>
@@ -55,6 +55,16 @@
 
     <!-- ===== HERO: Search & Filter ===== -->
     <header class="hero container">
+        <div class="hero__card">
+            <h1 class="hero__title">FIND YOUR DREAM HOME</h1>
+            <p class="hero__subtitle">Explore modern design and expert buildings.</p>
+                <div class="hero__searchbar">
+                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fff"><path d="M765-144 526-383q-30 22-65.79 34.5-35.79 12.5-76.18 12.5Q284-336 214-406t-70-170q0-100 70-170t170-70q100 0 170 70t70 170.03q0 40.39-12.5 76.18Q599-464 577-434l239 239-51 51ZM384-408q70 0 119-49t49-119q0-70-49-119t-119-49q-70 0-119 49t-49 119q0 70 49 119t119 49Z"/></svg>
+                    <input type="text" placeholder="Search for homes in Cambodia" class="hero-search">
+                </div>
+        </div>
+    </header>
+    <!-- <header class="hero container">
         <div class="hero__card">
             <h1 class="hero__title">Find your next home</h1>
             <p class="hero__subtitle">Affordable rentals & homes across Cambodia</p>
@@ -73,7 +83,7 @@
                 <button class="hero__btn" type="submit">Search</button>
             </form>
         </div>
-    </header>
+    </header> -->
 
     <!-- ===== Featured Properties (Horizontal) ===== -->
     <section class="section container">
