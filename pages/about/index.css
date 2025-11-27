@@ -1,6 +1,6 @@
 
 .about-text{
-    width: 100%;
+  
     background-color: var(--bg);
 }
 .about-text h1{
@@ -25,5 +25,5 @@
     width: 100%;
 }
 .img img{
-    padding: 15px 15px 15px 15px;
+    padding: 25px 25px 25px 25px;
 }
