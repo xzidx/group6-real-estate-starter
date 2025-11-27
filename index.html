@@ -15,15 +15,21 @@
 
     <link rel="icon" type="image/x-icon" href="/public/assets/images/company/favicon.ico">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
     <script src="https://unpkg.com/slim-select@latest/dist/slimselect.js"></script>
     <link href="https://unpkg.com/slim-select@latest/dist/slimselect.css" rel="stylesheet">
+
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap');
+    </style>
 </head>
 
 <body>
 
     <!-- ===== NAV ===== -->
-    <nav class="nav">
-        <div class="nav__bar">
+    <nav class="nav" aria-label="Primary">
+        <div class="nav__bar container">
             <a href="/" class="nav__brand"><img src="public/assets/images/company/image 2.png" alt=""></a>
             <ul class="nav__list">
                 <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
@@ -33,6 +39,7 @@
                 <li class="nav__item"><a href="#" class="nav__link">Agents</a></li>
                 <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
             </ul>
+            <button class="nav__toggle"><i class="fa-solid fa-moon"></i> Dark Mode</button>
         </div>
     </nav>
     <!-- <nav class="nav" aria-label="Primary">
