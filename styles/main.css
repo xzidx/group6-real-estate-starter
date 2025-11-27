@@ -1,10 +1,10 @@
 :root {
   /* Nude + Luxury palette */
-  --bg: #f6f2ee;
+  --bg-one: #fff;
 
-  --surface: #ffffff;
+  --bg-two: #000;
 
-  --text: #1d1b16;
+  --text-one: #fff;
 
   --muted: #7a736b;
 
@@ -38,6 +38,9 @@ body {
   font-family: var(--font-family-two);
   background: var(--surface);
   line-height: 1.45;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 a {
@@ -53,7 +56,6 @@ img {
 
 .container {
   max-width: var(--maxw);
-  margin: auto;
   padding-inline: 16px;
 }
 
