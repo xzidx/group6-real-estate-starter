@@ -40,7 +40,7 @@ body {
 
 }
 
-.container .card .agent .fa {
+/* .container .card .agent .fa {
 
     position: absolute;
 
@@ -54,7 +54,7 @@ body {
 
     color: #fff;
 
-}
+} */
 
 .container .card .slide {
 
@@ -118,7 +118,7 @@ body {
 
 }
 
-.container .card .slide.slide2::after{
+/* .container .card .slide.slide2::after{
 
     content: "";
 
@@ -138,7 +138,7 @@ body {
 
     background: #2c73df;
 
-}
+} */
 
 .container .card .slide.slide2 .content p {
 

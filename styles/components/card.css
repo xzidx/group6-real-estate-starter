@@ -12,6 +12,7 @@
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   transition: 0.3s;
+  overflow: hidden;
 }
 
 .card:hover {
