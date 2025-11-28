@@ -72,16 +72,21 @@ img {
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   padding: 18px;
+  text-align: center;
 }
 
 .hero__title {
-  font-size: 1.35rem;
+  font-size: 2.5rem;
+  font-weight: bold;
   margin: 0 0 6px;
+  color: var(--accent);
+  text-shadow: 5px 3px 5px #000;
 }
 
 .hero__subtitle {
-  color: var(--muted);
+  color: var(--text-one);
   margin: 0 0 14px;
+  font-size: 1.5rem;
 }
 
 .hero__form {
@@ -118,49 +123,7 @@ img {
 
 input::placeholder {
   color: #fff;
-}
-
-input:focus {
-  border-color: #fff;
-}
-
-.hero__row {
-  display: grid;
-  gap: 8px;
-}
-
-.hero__input,
-.hero__select {
-  width: 100%;
-  padding: 12px 12px;
-  border: 1px solid var(--line);
-  border-radius: 12px;
-  background: #fff;
   font-family: var(--font-family);
-}
-
-.hero__select {
-  appearance: none;
-  &:open {
-    background-color: var(--bg);
-  }
-  option {
-    background-color: var(--bg);
-  }
-}
-
-.hero__btn {
-  background: var(--accent);
-  color: #fff;
-  border: none;
-  border-radius: 12px;
-  padding: 12px 14px;
-  font-weight: 600;
-  font-family: var(--font-family);
-}
-
-.hero__btn:hover {
-  background: var(--accent-600);
 }
 
 .section {
@@ -169,13 +132,20 @@ input:focus {
 
 .section__head {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
   justify-content: space-between;
   margin-bottom: 8px;
 }
 
 .section__title {
   font-size: 1.5rem;
+  margin: 0;
+  color: var(--accent);
+}
+
+.section__subtitle {
+  font: 1rem;
   margin: 0;
 }
 
@@ -220,9 +190,8 @@ input:focus {
 }
 
 .agent__avatar {
-  width: 56px;
-  height: 56px;
-  border-radius: 50%;
+  width: 300px;
+  height: 200px;
   object-fit: cover;
 }
 

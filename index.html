@@ -29,7 +29,7 @@
     <nav class="nav">
         <!-- ==== NAV: SIDEBAR ==== -->
         <ul class="nav__list nav__sidebar">
-            <li onclick=hideSidebar()><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fff"><path d="m291-240-51-51 189-189-189-189 51-51 189 189 189-189 51 51-189 189 189 189-51 51-189-189-189 189Z"/></svg></a></li>
+            <li onclick=hideSidebar()><a href="" class="nav__link"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fff"><path d="m291-240-51-51 189-189-189-189 51-51 189 189 189-189 51 51-189 189 189 189-51 51-189-189-189 189Z"/></svg></a></li>
             <li class="nav__item"><a href="#" class="nav__link nav__sidebar-item">Home</a></li>
             <li class="nav__item"><a href="#" class="nav__link nav__sidebar-item">Rent</a></li>
             <li class="nav__item"><a href="#" class="nav__link nav__sidebar-item">Buy</a></li>
@@ -64,31 +64,12 @@
                 </div>
         </div>
     </header>
-    <!-- <header class="hero container">
-        <div class="hero__card">
-            <h1 class="hero__title">Find your next home</h1>
-            <p class="hero__subtitle">Affordable rentals & homes across Cambodia</p>
-            <form class="hero__form" action="#" role="search">
-                <select aria-label="Purpose" id="selectPurpose">
-                    <option>Rent</option>
-                    <option>Buy</option>
-                </select>
-                <select aria-label="Type" id="selectType">
-                    <option>Room</option>
-                    <option>Apartment</option>
-                    <option>House</option>
-                </select>
-                <input class="hero__input" type="text" placeholder="City or district" aria-label="Location" />
-                <input class="hero__input" type="number" placeholder="Max price (USD)" aria-label="Max price" />
-                <button class="hero__btn" type="submit">Search</button>
-            </form>
-        </div>
-    </header> -->
 
     <!-- ===== Featured Properties (Horizontal) ===== -->
     <section class="section container">
         <div class="section__head">
             <h2 class="section__title">Featured Properties</h2>
+            <p class="section__subtitle">Handpicked modern homes for you</p>
         </div>
 
         <div class="scroller" aria-label="Featured properties">
@@ -96,16 +77,17 @@
                 <!-- Group A -->
                 <div class="scroller__group">
                     <a class="card" href="/property/1">
-                        <img class="card__media" src="https://picsum.photos/640/400?1"
+                        <img class="card__media" src="/public/assets/images/properties/apartments/apartment-1.webp"
                             alt="Modern apartment near AEON Mall" />
                         <div class="card__body">
                             <h3 class="card__title">Modern Apartment — Chamkarmon</h3>
                             <div class="card__meta">$350 / month • 2BR</div>
+                            <div class="card__count"></div>
                             <span class="badge">Available</span>
                         </div>
                     </a>
                     <a class="card" href="/property/2">
-                        <img class="card__media" src="https://picsum.photos/640/400?2"
+                        <img class="card__media" src="/public/assets/images/properties/apartments/apartment-2.webp"
                             alt="Cozy student room near ITC" />
                         <div class="card__body">
                             <h3 class="card__title">Cozy Student Room — Toul Kork</h3>
@@ -114,7 +96,7 @@
                         </div>
                     </a>
                     <a class="card" href="/property/3">
-                        <img class="card__media" src="https://picsum.photos/640/400?3" alt="Family house in Sen Sok" />
+                        <img class="card__media" src="/public/assets/images/properties/condos/condo-1.jpg" alt="Family house in Sen Sok" />
                         <div class="card__body">
                             <h3 class="card__title">Family House — Sen Sok</h3>
                             <div class="card__meta">$78,000 • 3BR</div>
@@ -136,21 +118,21 @@
         </div>
         <div class="card-grid-groups" aria-label="Property categories">
             <article class="card-top">
-                <img class="card-top__media" src="https://picsum.photos/640/400?4" alt="Rooms" />
+                <img class="card-top__media" src="https://cbre.com.kh/wp-content/uploads/2023/04/1.png" alt="Rooms" />
                 <div class="card-top__body">
                     <h3 class="card-top__title">Rooms</h3>
                     <div class="card-top__meta">Budget stays</div>
                 </div>
             </article>
             <article class="card-top">
-                <img class="card-top__media" src="https://picsum.photos/640/400?5" alt="Apartments" />
+                <img class="card-top__media" src="public/assets/images/properties/apartments/apartment-3.jpg" alt="Apartments" />
                 <div class="card-top__body">
                     <h3 class="card-top__title">Apartments</h3>
                     <div class="card-top__meta">City living</div>
                 </div>
             </article>
             <article class="card-top">
-                <img class="card-top__media" src="https://picsum.photos/640/400?6" alt="Houses" />
+                <img class="card-top__media" src="https://propertyhotshot.com/wp-content/uploads/2025/05/How-to-buy-a-property-in-Lagos-Nigeria.png" alt="Houses" />
                 <div class="card-top__body">
                     <h3 class="card-top__title">Houses</h3>
                     <div class="card-top__meta">Family homes</div>
@@ -167,21 +149,21 @@
         </div>
         <div class="card-grid-groups" aria-label="Latest properties">
             <article class="card-top">
-                <img class="card-top__media" src="https://picsum.photos/640/400?7" alt="Studio near BKK1" />
+                <img class="card-top__media" src="https://www.starestate.in/api/star_estate/blogs/cozystudioapartmentwithbedroomlivingspace1716268571.webp" alt="Studio near BKK1" />
                 <div class="card-top__body">
                     <h3 class="card-top__title">Studio — BKK1</h3>
                     <div class="card-top__meta">$250 / month</div>
                 </div>
             </article>
             <article class="card-top">
-                <img class="card-top__media" src="https://picsum.photos/640/400?8" alt="Condo in Chroy Changvar" />
+                <img class="card-top__media" src="public/assets/images/properties/condos/condo-3.jpg" alt="Condo in Chroy Changvar" />
                 <div class="card-top__body">
                     <h3 class="card-top__title">Condo — Chroy Changvar</h3>
                     <div class="card-top__meta">$560 / month</div>
                 </div>
             </article>
             <article class="card-top">
-                <img class="card-top__media" src="https://picsum.photos/640/400?9" alt="Townhouse in Russey Keo" />
+                <img class="card-top__media" src="https://www.summithomes.com.au/wp-content/uploads/2023/05/multi-units.jpg" alt="Townhouse in Russey Keo" />
                 <div class="card-top__body">
                     <h3 class="card-top__title">Townhouse — Russey Keo</h3>
                     <div class="card-top__meta">$120,000</div>
@@ -197,6 +179,11 @@
             <a class="section__link" href="#">Show More</a>
         </div>
         <div class="section__agents">
+            <div class="agent">
+                <img src="https://i.pinimg.com/1200x/4a/8d/20/4a8d20c095b405dbbb7a234e39648508.jpg" alt="Agent Gojo" class="agent__avatar">
+            </div>
+        </div>
+        <!-- <div class="section__agents">
             <div class="agent">
                 <img class="agent__avatar" src="https://i.pravatar.cc/100?img=12" alt="Agent Dara" />
                 <div>
@@ -218,7 +205,7 @@
                     <div class="card__meta">Budget rentals</div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </section>
 
     <!-- ===== Why Us? + Inquiry Form ===== -->

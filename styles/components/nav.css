@@ -70,7 +70,8 @@ button {
 }
 
 .nav__link {
-  display: block;
+  display: flex;
+  align-items: center;
 }
 
 .menu__button {
@@ -96,11 +97,20 @@ button {
   button {
     display: none;
   }
+  .hero__searchbar .icon {
+    z-index: 1;
+  }
   
 }
 @media (max-width: 500px) {
   .nav__sidebar{
     width: 100%;
+  }
+  .hero__title {
+  font-size: 1.8rem;
+  }
+  .hero__subtitle {
+  font-size: 1rem;
   }
   
 }

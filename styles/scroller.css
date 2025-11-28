@@ -1,6 +1,7 @@
 .scroller {
   overflow: hidden;
   position: relative;
+  padding: 20px 0;
 }
 
 .scroller__track {
