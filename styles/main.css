@@ -10,7 +10,7 @@
 
   --accent: #ffbb00;
 
-  --accent-600: #9f7c41;
+  --accent-600: #dba100;
 
   --line: #e9e2db;
 
@@ -63,24 +63,22 @@ img {
 }
 
 .hero__card {
+  background: linear-gradient(180deg, #fbf8f5, #f6f2ee);
   border: 1px solid var(--line);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   padding: 18px;
-  text-align: center;
 }
 
 .hero__title {
-  font-size: 2.5rem;
-  font-weight: bold;
+  font-size: 1.35rem;
   margin: 0 0 6px;
   color: var(--accent);
 }
 
 .hero__subtitle {
-  color: var(--text-two);
+  color: var(--muted);
   margin: 0 0 14px;
-  font-size: 1.5rem;
 }
 
 .hero__form {
@@ -88,34 +86,43 @@ img {
   gap: 10px;
 }
 
-.hero__searchbar {
-  border-radius: 20px;
-  border: 1px solid #e5e5e5;
-  position: relative;
-  display: flex;
-  align-items: center;
-
+.hero__row {
+  display: grid;
+  gap: 8px;
 }
 
-.hero__searchbar .icon {
-  position: absolute;
-  top: 50%;
-  right: 15px;
-  transform: translateY(-50%);
-  z-index: 999;
-}
-
-.hero__searchbar input {
-  border: none;
+.hero__input,
+.hero__select {
   width: 100%;
-  padding: 20px 15px;
-  border-radius: 20px;
-  color: #fff;
+  padding: 12px 12px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #fff;
+  font-family: var(--font-family);
 }
 
-input::placeholder {
-  /* color: #fff; */
+.hero__select {
+  appearance: none;
+  &:open {
+    background-color: var(--bg);
+  }
+  option {
+    background-color: var(--bg);
+  }
+}
+
+.hero__btn {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 14px;
+  font-weight: 600;
   font-family: var(--font-family);
+}
+
+.hero__btn:hover {
+  background: var(--accent-600);
 }
 
 .section {
@@ -216,12 +223,15 @@ input::placeholder {
 }
 
 .section__button a {
-  background-color: var(--bg-two);
+  background-color: var(--accent);
   padding: 10px 30px;
   width: 100%;
-  color: white;
+  color: #fff;
   border-radius: 20px;
   text-align: center;
+}
+.section__button a:hover {
+  background-color: var(--accent-600);
 }
 
 .why {
@@ -255,7 +265,6 @@ input::placeholder {
 }
 
 .subscribe {
-  background: linear-gradient(180deg, #f9f5f1, #f4efe9);
   border: 1px solid var(--line);
   border-radius: var(--radius);
   box-shadow: var(--shadow);

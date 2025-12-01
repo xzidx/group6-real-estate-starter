@@ -33,7 +33,7 @@ button {
 }
 
 .nav__sidebar-item {
-  color: #fff;
+  color: #000;
 }
 
 .nav__list {
@@ -52,14 +52,12 @@ button {
   width: 300px;
   height: 100%;                                                                            
   z-index: 999;
-  background-color: var(--bg-two);
+  background-color: var(--bg-one);
   display: none;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;                                                                                                                                                                                                                                  
 }
-
-.nav__sidebar li 
 
 .nav__item {
   padding: 10px 0;

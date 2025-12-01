@@ -26,11 +26,11 @@
 
 <body>
 
-    
+    <!-- ===== NAV ===== -->
     <nav class="nav">
         <!-- ==== NAV: SIDEBAR ==== -->
         <ul class="nav__list nav__sidebar">
-            <li onclick=hideSidebar()><a href="" class="nav__link"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fff"><path d="m291-240-51-51 189-189-189-189 51-51 189 189 189-189 51 51-189 189 189 189-51 51-189-189-189 189Z"/></svg></a></li>
+            <li onclick=hideSidebar()><a href="" class="nav__link"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#000"><path d="m291-240-51-51 189-189-189-189 51-51 189 189 189-189 51 51-189 189 189 189-51 51-189-189-189 189Z"/></svg></a></li>
             <li class="nav__item"><a href="#" class="nav__link nav__sidebar-item">Home</a></li>
             <li class="nav__item"><a href="#" class="nav__link nav__sidebar-item">Rent</a></li>
             <li class="nav__item"><a href="#" class="nav__link nav__sidebar-item">Buy</a></li>
@@ -57,12 +57,22 @@
     <!-- ===== HERO: Search & Filter ===== -->
     <header class="hero container">
         <div class="hero__card">
-            <h1 class="hero__title">FIND YOUR DREAM HOME</h1>
-            <p class="hero__subtitle">Explore modern design and expert buildings.</p>
-                <div class="hero__searchbar">
-                    <svg class="icon" xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#fff"><path d="M765-144 526-383q-30 22-65.79 34.5-35.79 12.5-76.18 12.5Q284-336 214-406t-70-170q0-100 70-170t170-70q100 0 170 70t70 170.03q0 40.39-12.5 76.18Q599-464 577-434l239 239-51 51ZM384-408q70 0 119-49t49-119q0-70-49-119t-119-49q-70 0-119 49t-49 119q0 70 49 119t119 49Z"/></svg>
-                    <input type="text" placeholder="Search for homes in Cambodia" class="hero-search">
-                </div>
+            <h1 class="hero__title">Find your next home</h1>
+            <p class="hero__subtitle">Affordable rentals & homes across Cambodia</p>
+            <form class="hero__form" action="#" role="search">
+                <select aria-label="Purpose" id="selectPurpose">
+                    <option>Rent</option>
+                    <option>Buy</option>
+                </select>
+                <select aria-label="Type" id="selectType">
+                    <option>Room</option>
+                    <option>Apartment</option>
+                    <option>House</option>
+                </select>
+                <input class="hero__input" type="text" placeholder="City or district" aria-label="Location" />
+                <input class="hero__input" type="number" placeholder="Max price (USD)" aria-label="Max price" />
+                <button class="hero__btn" type="submit">Search</button>
+            </form>
         </div>
     </header>
 
@@ -190,8 +200,8 @@
                     <p>+855 12 345 6789</p>
                     <div class="section__icon"><i class="fa-brands fa-telegram"></i><i class="fa-brands fa-linkedin"></i><i class="fa-brands fa-twitter"></i></div>
                     <div class="section__button">
-                        <a href="#">View Profile</a>
-                        <a href="#" style="background-color: #ffbb00;">Call</a>
+                        <a href="#" style="background-color: var(--badge); color: #000">Profile</a>
+                        <a href="#">Call</a>
                     </div>
                 </div>
             </div>
@@ -205,8 +215,8 @@
                     <p>+855 12 345 6789</p>
                     <div class="section__icon"><i class="fa-brands fa-telegram"></i><i class="fa-brands fa-linkedin"></i><i class="fa-brands fa-twitter"></i></div>
                     <div class="section__button">
-                        <a href="#">View Profile</a>
-                        <a href="#" style="background-color: #ffbb00;">Call</a>
+                        <a href="#" style="background-color: var(--badge); color: #000">Profile</a>
+                        <a href="#">Call</a>
                     </div>
                 </div>
             </div>
@@ -220,8 +230,8 @@
                     <p>+855 12 345 6789</p>
                     <div class="section__icon"><i class="fa-brands fa-telegram"></i><i class="fa-brands fa-linkedin"></i><i class="fa-brands fa-twitter"></i></div>
                     <div class="section__button">
-                        <a href="#">View Profile</a>
-                        <a href="#" style="background-color: #ffbb00;">Call</a>
+                        <a href="#" style="background-color: var(--badge); color: #000">Profile</a>
+                        <a href="#">Call</a>
                     </div>
                 </div>
             </div>
@@ -264,12 +274,10 @@
             <h2 class="section__title" style="margin:0 0 8px">Inquiry Form</h2>
             <form class="inquiry form" action="#">
                 <div class="form__group">
-                    <!-- <label for="inq-name">Your name</label> -->
+                    <label for="inq-info">Information</label>
                     <input class="input" id="inq-name" type="text" placeholder="Full name" required>
-                </div>
-                <div class="form__group">
-                    <label for="inq-email">Email</label>
-                    <input class="input" id="inq-email" type="email" placeholder="you@example.com" required>
+                    <input class="input" id="inq-email" type="email" placeholder="Email address" required>
+                    <input class="input" id="inq-email" type="number" placeholder="Phone number" required>
                 </div>
                 <div class="form__group">
                     <label for="inq-msg">Message</label>
@@ -289,16 +297,16 @@
             <div class="scroller__track">
                 <div class="scroller__group" id="testimonials" aria-label="Testimonials">
                     <blockquote class="quote card">
-                        <p>“Found a clean room near campus in 2 days. Love the Khmer support.”</p>
-                        <div class="quote__name">— Sopheak, Student</div>
+                        <p>“Very easy to use. I found a good apartment fast.”</p>
+                        <div class="quote__name">— Sokha L</div>
                     </blockquote>
                     <blockquote class="quote card">
-                        <p>“Great agents and fair prices. Easy on mobile.”</p>
-                        <div class="quote__name">— Rina, Receptionist</div>
+                        <p>“Clear info and real prices. Helped me choose quickly.”</p>
+                        <div class="quote__name">— Dara M</div>
                     </blockquote>
                     <blockquote class="quote card">
-                        <p>“Transparent listings and quick replies.”</p>
-                        <div class="quote__name">— Vuthy, Technician</div>
+                        <p>“Simple and helpful website. Got a response the same day.”</p>
+                        <div class="quote__name">— Chenda R</div>
                     </blockquote>
                 </div>
             </div>
@@ -326,7 +334,7 @@
     <footer class="footer">
         <div class="footer__grid container">
             <div>
-                <strong>KH Realty</strong><br />
+                <img src="http://127.0.0.1:5501/public/assets/images/company/image%202.png" alt=""><br />
                 <span class="footer__small">Helping Cambodians find homes easily.</span>
             </div>
             <nav aria-label="Footer">
@@ -335,7 +343,7 @@
             </nav>
         </div>
         <div class="container" style="margin-top:10px">
-            <small class="footer__small">© 2025 KH Realty</small>
+            <small class="footer__small">© 2025 Apple KH Real Estate. All right reserved.</small>
         </div>
     </footer>
 
