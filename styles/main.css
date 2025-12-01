@@ -209,9 +209,27 @@ img {
   flex-direction: column;
   padding: 10px;
   box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
   gap: 10px;
+}
+
+.section__icon {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+}
+
+.section__icon a {
+  padding: 10px;
+  width: 100%;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-out;
+}
+
+.section__icon a:hover {
+  background-color: var(--badge);
 }
 
 .section__button {
@@ -291,4 +309,11 @@ img {
 .footer__small {
   color: var(--muted);
   font-size: 0.9rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.footer__small a:hover {
+  color: var(--bg-two);
+  font-weight: 600;
 }

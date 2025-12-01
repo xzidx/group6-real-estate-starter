@@ -1,67 +1,46 @@
-<html
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test--code</title>
 
-    <title>Card Hover Effect</title>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="stylesheet" type="text/css" media="screen" href="test.css" />
-
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
-
-        crossorigin="anonymous">
-
+    <style>
+        body {
+            background-color: #fff;
+            color: #000;
+        }
+        .dark--mode {
+            background-color: #000;
+            color: #fff;
+        }
+    </style>
 </head>
+<body class="dark--mode">
+    <button id="dark--mode--toggle">Dark Mode</button>
 
-<body>
+    <h1 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;">Hello World</h1>
 
-    <div class="container">
+    <script>
 
-       
+        const darkModeToggle = document.getElementById("dark--mode--toggle");
 
-        <div class="card">
+        // Load saved mode
+        if (localStorage.getItem("mode") === "dark") {
+        document.body.classList.add("dark--mode");
+        }
 
-            <div class="slide slide1">
+        // Toggle mode
+        darkModeToggle.onclick = () => {
+        document.body.classList.toggle("dark--mode");
 
-                <div class="content">
+        if (document.body.classList.contains("dark--mode")) {
+            localStorage.setItem("mode", "dark");
+        } else {
+            localStorage.setItem("mode", "light");
+        }
+        };
 
-                    <div class="agent">
-
-                        <img src="https://i.pinimg.com/736x/2b/e9/84/2be98425a51e14172195409cee9df2fc.jpg" alt="" class="agent__avatar">
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class="slide slide2">
-
-                <div class="content" style="display: flex; flex-direction: column; gap: 15px;">
-
-                    <h3>
-
-                        Gojo Satoru
-
-                    </h3>
-
-                    <p>senior Estate Agent</p>
-
-                    <span style="display: block;">+855 12 345 6789</span>
-
-                    <button style="border: none;"><a href="" style="text-decoration: none; color: #fff; background-color: #000; padding: 10px 30px; border-radius: 15px;">View Profile</a></button>
-
-                </div>
-
-            </div>
-
-        </div>
-
-        
-
-    </div>
-
+    </script>
 </body>
-
 </html>

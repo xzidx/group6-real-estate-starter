@@ -45,7 +45,7 @@ button {
   background: var(--surface);
 }
 
-.nav__sidebar {
+.nav__sidebar__container {
   position: fixed;
   top: 0;
   right: 0;
@@ -54,6 +54,13 @@ button {
   z-index: 999;
   background-color: var(--bg-one);
   display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;  
+}
+
+
+.nav__sidebar {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;                                                                                                                                                                                                                                  
@@ -92,7 +99,7 @@ button {
   .menu__button {
     display: block;
   }
-  .nav__button {
+  .nav__button__container {
     display: none;
   }
   .hero__searchbar .icon {
@@ -101,7 +108,7 @@ button {
   
 }
 @media (max-width: 500px) {
-  .nav__sidebar{
+  .nav__sidebar__container {
     width: 100%;
   }
   .hero__title {
