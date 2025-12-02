@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+    --bg: red;
+    --text: black;
+    --title-color: #FFBB00;
+    --font-familyone: "Oswald", sans-serif;
+    --font-familytwo: "Roboto", sans-serif;
+    --button-text: #ACACAC;
+
+}
+.title{
+    max-width: 100%;
+}
+.title-text{
+    width: 100%;
+    margin: auto;
+}
+.title-text h1{
+    font-size: 23px;
+    font-family: var(--font-familyone);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #FFBB00;
+}
+.success{
+    width: 100%;
+    /* background-color: #ACACAC; */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.success1{
+    width: 80%;
+    background-color: #ffff;
+    margin: auto;
+    padding: 40px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.image img{
+    width: 50%;
+    /* background-color: red; */
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.success-text{
+    width: 100%;
+    display: block;
+    justify-content: center;
+    text-align: center;
+}
+.success-text h3{
+    font-size: 40px;
+    font-family: var(--font-familyone);
+    margin: 0;
+}
+.success-text p{
+    font-size: 13px;
+    font-family: var(--font-familytwo);
+}
+button{
+    font-size: 20px;
+    font-family: var(--font-familytwo);
+    padding: 5px;
+    border-radius: 15px;
+    background-color: #FF0000;
+    
+}
