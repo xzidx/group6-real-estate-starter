@@ -70,3 +70,20 @@ document.addEventListener("click", (e) => {
         filterMenu.style.display = "none";
     }
 });
+function showSidebar(){
+            const sidebar = document.querySelector('.nav__sidebar__container')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const hidebar = document.querySelector('.nav__sidebar__container')
+            hidebar.style.display = 'none'
+        }
+
+        // Select
+        new SlimSelect({
+            select: '#selectPurpose'
+        })
+
+        new SlimSelect({
+            select: '#selectType'
+        })
