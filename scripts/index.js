@@ -1,10 +1,8 @@
-console.log("Main JavaScript");
 const agentInformation = document.getElementById('section__agents')
 
 fetch("../public/data/agents.json")
   .then((response) => response.json())
   .then((data) => {
-    console.log(data);
     if (data.length > 0) {
       for (let i = 0; i < 3; i++) {
         agentInformation.innerHTML += `
@@ -32,3 +30,42 @@ fetch("../public/data/agents.json")
     }
   })
   .catch((error) => console.error("Error fetching JSON:", error));
+
+const featuredProperty = document.getElementById('section__featured')
+
+fetch('public/data/properties.json')
+  .then((response) => response.json())
+  .then((data) => {
+    if(data.length > 0) {
+      for(let i = 0; i < 3; i++) {
+        featuredProperty.innerHTML += `
+        <a class="card" href="/property/1">
+            <img class="card__media" src="/public/assets/images/properties/apartments/apartment-1.webp"
+                alt="Modern apartment near AEON Mall" />
+            <div class="card__body">
+                <h3 class="card__title">Modern Apartment — Chamkarmon</h3>
+                <div class="card__meta">$350 / month • 2BR</div>
+                <div class="card__count"></div>
+                <span class="badge">Available</span>
+            </div>
+        </a>
+        <a class="card" href="/property/2">
+            <img class="card__media" src="/public/assets/images/properties/apartments/apartment-2.webp"
+                alt="Cozy student room near ITC" />
+            <div class="card__body">
+                <h3 class="card__title">Cozy Student Room — Toul Kork</h3>
+                <div class="card__meta">$80 / month • 1BR</div>
+                <span class="badge">Available</span>
+            </div>
+        </a>
+        <a class="card" href="/property/3">
+            <img class="card__media" src="/public/assets/images/properties/condos/condo-1.jpg" alt="Family house in Sen Sok" />
+            <div class="card__body">
+                <h3 class="card__title">Family House — Sen Sok</h3>
+                <div class="card__meta">$78,000 • 3BR</div>
+                <span class="badge">For Sale</span>
+            </div>
+        </a>`
+      }
+    }
+  })
