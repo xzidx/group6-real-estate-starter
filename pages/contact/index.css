@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+    --bg: red;
+    --text: black;
+    --title-color: #FFBB00;
+    --font-familyone: "Oswald", sans-serif;
+    --font-familytwo: "Roboto", sans-serif;
+    --button-text: #ACACAC;
+
+}
+.title{
+    max-width: 100%;
+}
+.title-text{
+    width: 100%;
+    margin: auto;
+}
+.title-text h1{
+    font-size: 23px;
+    font-family: var(--font-familyone);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #FFBB00;
+}
+
+
+.contact{
+    width: 100%;
+    font-family: var(--font-familyone);
+}
+.contact-form{
+    width: 100%;
+}
+.row0 input{
+    width: 40%;
+    border: 2px solid #ffcc00;
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 25px;
+    font-family: var(--font-familytwo);
+}
+
+.row-cols {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row1 {
+    display: flex;
+    flex-direction: column;
+}
+.row1 input{
+    width: 80%;
+    border: 2px solid #ffcc00; 
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 25px;
+    font-family: var(--font-familytwo);
+}
+.row1 label{
+    margin-bottom: 10px;
+}
+.input, select {
+  width: 99%;
+  padding: 15px;
+  border: 2px solid #ffcc00;   
+  border-radius: 15px;
+  margin-bottom: 25px;
+  font-family: var(--font-familytwo);
+}
+.input, textarea{
+  width: 90%;
+  padding: 15px;
+  border: 2px solid #ffcc00;   
+  border-radius: 15px;
+  margin-bottom: 25px;
+  font-family: var(--font-familytwo);
+}
+.input, button{
+    width: 35%;
+    padding: 10px;
+    background-color: var(--button-text);
+    border-radius: 15px;
+    font-family: var(--font-familyone);
+}
