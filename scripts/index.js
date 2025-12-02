@@ -40,32 +40,15 @@ fetch('public/data/properties.json')
       for(let i = 0; i < 3; i++) {
         featuredProperty.innerHTML += `
         <a class="card" href="/property/1">
-            <img class="card__media" src="/public/assets/images/properties/apartments/apartment-1.webp"
-                alt="Modern apartment near AEON Mall" />
+            <img class="card__media" src="${data[i].images}"
+                alt="${data[i].title.en}" />
             <div class="card__body">
-                <h3 class="card__title">Modern Apartment — Chamkarmon</h3>
-                <div class="card__meta">$350 / month • 2BR</div>
-                <div class="card__count"></div>
-                <span class="badge">Available</span>
+                <h3 class="card__title">${data[i].title.en} - ${data[i].location.district}</h3>
+                <div class="card__meta">${data[i].price} ${data[i].currency} • ${data[i].bedrooms} BR</div>
+                <span class="badge">${data[i].purpose}</span>
             </div>
         </a>
-        <a class="card" href="/property/2">
-            <img class="card__media" src="/public/assets/images/properties/apartments/apartment-2.webp"
-                alt="Cozy student room near ITC" />
-            <div class="card__body">
-                <h3 class="card__title">Cozy Student Room — Toul Kork</h3>
-                <div class="card__meta">$80 / month • 1BR</div>
-                <span class="badge">Available</span>
-            </div>
-        </a>
-        <a class="card" href="/property/3">
-            <img class="card__media" src="/public/assets/images/properties/condos/condo-1.jpg" alt="Family house in Sen Sok" />
-            <div class="card__body">
-                <h3 class="card__title">Family House — Sen Sok</h3>
-                <div class="card__meta">$78,000 • 3BR</div>
-                <span class="badge">For Sale</span>
-            </div>
-        </a>`
+        `
       }
     }
   })
