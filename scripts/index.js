@@ -46,7 +46,7 @@ fetch('public/data/properties.json')
         
         
         
-        <a class="card" href="/property/1">
+        <a class="card" href="/pages/property list/index.html">
             <img class="card__media" src="/public/assets/images/properties/apartments/apartment-1.webp"
                 alt="Modern apartment near AEON Mall" />
             <div class="card__body">
