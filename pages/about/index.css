@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+    --bg: red;
+    --text: black;
+    --title-color: #FFBB00;
+    --font-familyone: "Oswald", sans-serif;
+    --font-familytwo: "Roboto", sans-serif;
+    --button-text: #ACACAC;
+
+}
+
+.about-text{
+  max-width: 100%;
+  
+}
+.about-text h1{
+    font-size: 23px;
+    text-align: center;
+    color: var(--title-color);
+    font-family: var(--font-familyone);
+    margin-bottom: 5px;
+}
+.about-text h3{
+    font-size: 18px;
+    font-family: var(--font-familyone);
+    margin: 25px;
+    margin-bottom:0;
+}
+.about-text span{
+    font-size: 14px;
+    margin: 25px;
+    font-family: var(--font-familytwo);
+}
+.img{
+    /* display: flex; */
+    justify-content: center;
+}
+.img img{
+    width: 100%;
+
+}
+.ourvision{
+    /* background-color: var(--bg); */
+    padding: 5px;
+}
+.ourtext{
+    background-color: var(--button-text);
+    width: 73px;
+    height: 25px;
+    border-radius: 15px;
+    margin-left: 13px;
+}
+.ourtext h5{
+    font-size: 10px;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    margin: 0;
+    padding-top: 5px;
+    font-family: var(--font-familyone);
+}
+.ourvision1{
+    width: 100%;
+}
+.ourvisioin-text{
+    width: 100%;
+}
+.ourvision-text p{
+    font-size: 12px;
+    font-family: var(--font-familytwo);
+    margin-left: 17px;
+    /* background-color: var(--bg); */
+    font-weight: 5px;
+}
+.customerrate{
+    width: 98%;
+    /* background-color: gray; */
+     border: 2px solid #ACACAC;
+    border-radius: 15px;
+}
+.customer-text{
+    width: 90%;
+    /* background-color: var(--bg); */
+    margin: auto;
+    display: flex;
+    gap: 30px;
+}
+.customer-text h2 {
+    font-size: 20px;
+    font-family: var(--font-familyone);
+    margin-left: 10px;
+    margin-bottom: 0px;
+}
+.customer-note {   
+    /* background-color:gray; */
+}
+.note1 {
+    /* background-color: var(--bg); */
+    display: flex;
+}
+.note1 p {
+    font-size: 8px;
+    margin: auto;
+    gap: 50px;
+    padding: 5px;
+    font-family: var(--font-familytwo);
+}
+.ouroffice{
+    /* background-color: lightblue; */
+}
+.office-text h1{
+    font-size: 23px;
+    text-align: center;
+    font-family: var(--font-familyone);
+}
+.imgoffice{
+    justify-content: center;
+    /* height: 180px; */
+    box-sizing: border-box;
+}
+.imgoffice img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.office1{
+   margin-left: 15px;
+   margin-bottom: 5px;
+   margin: 0;
+}
+.office1 h5{
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-familyone);
+}
+.office1 p{
+    font-size: 12px;
+    font-family: var(--font-familytwo);
+}
+.ouragent{
+    /* background-color: red; */
+    margin: auto;
+}
+.ouragent-text{
+    /* background-color: lightblue; */
+    margin: auto;
+}
+.ouragent-text h1{
+    font-size: 20px;
+    font-family: var(--font-familyone);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.showagent a{
+    width: 100%;
+    /* background-color: var(--bg); */
+    display: flex;
+    text-decoration: none;
+    gap: 17px;
+}
+.image-agent{
+    width: 30%;
+    /* background-color: gray; */
+}
+.image-agent img{
+    width: 100%;
+    border-radius: 15px;
+    display: flex;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.agent-text{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+.agent-text h6{
+    font-size: 15px;
+    font-family: var(--font-familyone);
+    margin: 5px;
+    display: flex;
+}
+.agent-text p{
+    font-size: 9px;
+    font-family: var(--font-familytwo);
+    margin: 5px;
+    display: flex;
+}
+.agent-text i{
+    display: block;
+    margin-left: auto;    
+}
+.icon1{
+    font-size: 15px;
+    margin-top: 5px;
+}
+.icon2{
+    font-size: 15px;
+}
+.moreagetn{
+    width: 100%;
+    background-color: #2b2828;
+}
+.more-text a{
+    width: 25%;
+    /* background-color: red; */
+    margin: auto;
+    border: 2px solid black;
+    text-decoration: none;
+    border-radius: 15px;
+}
+.more-text a{
+    font-size: 15px;
+    font-family: var(--font-familyone);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
