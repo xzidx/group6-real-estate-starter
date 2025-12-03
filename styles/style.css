@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Momo+Trust+Display&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Stack+Sans+Headline:wght@200..700&display=swap');
+
+
+:root {
+    --bar: #ff0000;
+    --Font-famliy-one:"Oswald", sans-serif;font-weight: 200;font-style: normal;
+    --Font-famliy-two:font-family: "Roboto", sans-serif;font-weight: 400;
+    --Font-color-general-2:#959090;
+    --head-letter-color:#FFBB00;
+    --bg:grey;
+    --box-bg:blue;
+    --bg-white:white;
+    --bg-black:black;
+
+}   
+body{
+    /* background-color: var(--bar); */
+    margin: 0;
+}
+:root {
+  /* Nude + Luxury palette */
+  --bg-one: #fff;
+
+  --bg-two: #000;
+
+  --text: #000;
+
+  --muted: #7a736b;
+
+  --accent: #ffbb00;
+
+  --accent-600: #dba100;
+
+  --line: #e9e2db;
+
+  --badge: #efe7de;
+
+  --radius: 14px;
+
+  --shadow: 0 6px 20px rgba(0, 0, 0, 0.03);
+
+  --maxw: 100%;
+
+  --font-family: "Roboto Condensed", sans-serif;
+}
+
+.dark__mode {
+
+  --bg-one: #000;
+
+  --bg-two: #fff;
+
+  --text: #fff;
+
+  --muted: #c9c3bb;
+
+  --accent: #ffbb00;
+
+  --accent-600: #dba100;
+
+  --line: #4a4744;
+
+  --badge: #4f4740;
+
+}
