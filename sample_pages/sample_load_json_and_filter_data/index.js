@@ -16,7 +16,6 @@ fetch("/public/data/properties.json")
             } else {
               purposeSpanHTML = `<span style="color: blue">(${data[i].purpose})</span>`;
             }
-
             propertyList.innerHTML += `
           <a class="card" href="/pages/property/${data[i].title.en}">
               <img class="card__media" src="${data[i].images[0]}"
