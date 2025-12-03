@@ -20,8 +20,8 @@ fetch("../public/data/agents.json")
                     <a href="#"><i class="fa-brands fa-twitter"></i></a>
                 </div>
                 <div class="section__button">
-                    <a href="#" style="background-color: var(--badge); color: var(--text)">Profile</a>
-                    <a href="#">Call</a>
+                    <a href="/pages/agent-details" style="background-color: var(--badge); color: var(--text)">Profile</a>
+                    <a href="/pages/agent-details">Call</a>
                 </div>
             </div>
         </div>
@@ -55,7 +55,7 @@ fetch('public/data/properties.json')
                 <span class="badge">${data[i].purpose}</span>
             </div>
         </a>
-        <a class="card" href="/property/2">
+        <a class="card" href="/pages/property list/index.html">
             <img class="card__media" src="/public/assets/images/properties/apartments/apartment-2.webp"
                 alt="Cozy student room near ITC" />
             <div class="card__body">
@@ -64,7 +64,7 @@ fetch('public/data/properties.json')
                 <span class="badge">Available</span>
             </div>
         </a>
-        <a class="card" href="/property/3">
+        <a class="card" href="/pages/property list/index.html">
             <img class="card__media" src="/public/assets/images/properties/condos/condo-1.jpg" alt="Family house in Sen Sok" />
             <div class="card__body">
                 <h3 class="card__title">Family House — Sen Sok</h3>

@@ -79,7 +79,6 @@ function showSidebar(){
             hidebar.style.display = 'none'
         }
 
-        // Select
         new SlimSelect({
             select: '#selectPurpose'
         })
@@ -87,3 +86,20 @@ function showSidebar(){
         new SlimSelect({
             select: '#selectType'
         })
+        const darkModeToggle = document.getElementById('darkModeToggle');
+
+        // load saved mode
+        if (localStorage.getItem('mode') === 'dark') {
+            document.body.classList.add('dark__mode');
+        }
+
+        // toggle mode
+        darkModeToggle.onclick = () => {
+            document.body.classList.toggle('dark__mode');
+
+            if (document.body.classList.contains('dark__mode')) {
+                localStorage.setItem('mode', 'dark');
+            } else {
+                localStorage.setItem('mode', 'light');
+            }
+        };
