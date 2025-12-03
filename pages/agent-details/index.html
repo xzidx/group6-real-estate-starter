@@ -11,7 +11,36 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
 <body>
-
+    <nav class="nav">
+        <!-- ==== NAV: SIDEBAR ==== -->
+        <div class="nav__sidebar__container">
+            <ul class="nav__list nav__sidebar">
+                <li onclick=hideSidebar()><a href="#" class="nav__link"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="var(--text)"><path d="m291-240-51-51 189-189-189-189 51-51 189 189 189-189 51 51-189 189 189 189-51 51-189-189-189 189Z"/></svg></a></li>
+                <li class="nav__item"><a href="../../../index.html" class="nav__link nav__sidebar-item">Home</a></li>
+                <li class="nav__item"><a href="/pages/property list/index.html" class="nav__link nav__sidebar-item">Rent</a></li>
+                <li class="nav__item"><a href="/pages/property list/index.html" class="nav__link nav__sidebar-item">Buy</a></li>
+                <li class="nav__item"><a href="/pages/about/index.html" class="nav__link nav__sidebar-item">About</a></li>
+                <li class="nav__item"><a href="pages/agents/index.html" class="nav__link nav__sidebar-item">Agents</a></li>
+                <li class="nav__item"><a href="/pages/contact/index.html" class="nav__link nav__sidebar-item">Contact</a></li>
+            </ul>
+        </div>
+        <!-- ===== NAV ===== -->
+        <div class="nav__bar container">
+            <a href="../../../index.html" class="nav__brand"><img src="../../public/assets/images/company/image 2.png" alt=""></a>
+            <ul class="nav__list">
+                <li class="nav__item hideOnMobile"><a href="../../../index.html" class="nav__link">Home</a></li>
+                <li class="nav__item hideOnMobile"><a href="pages/property list/index.html" class="nav__link">Rent</a></li>
+                <li class="nav__item hideOnMobile"><a href="pages/property list/index.html" class="nav__link">Buy</a></li>
+                <li class="nav__item hideOnMobile"><a href="/pages/about/index.html" class="nav__link">About</a></li>
+                <li class="nav__item hideOnMobile"><a href="/pages/agents/index.html" class="nav__link">Agents</a></li>
+                <li class="nav__item hideOnMobile"><a href="/pages/contact/index.html" class="nav__link">Contact</a></li>
+                <li class="menu__button" onclick=showSidebar()><a href="#" class="nav__link"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="var(--text)"><path d="M144-264v-72h672v72H144Zm0-180v-72h672v72H144Zm0-180v-72h672v72H144Z"/></svg></a></li>
+            </ul>
+            <div class="nav__button__container">
+                <button class="nav__button" id="darkModeToggle"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="var(--text)"><path d="M479.96-144Q340-144 242-242t-98-238q0-140 97.93-238t237.83-98q13.06 0 25.65 1 12.59 1 25.59 3-39 29-62 72t-23 92q0 85 58.5 143.5T648-446q49 0 92-23t72-62q2 13 3 25.59t1 25.65q0 139.9-98.04 237.83t-238 97.93Zm.04-72q82 0 148.78-47.07Q695.55-310.15 727-386q-20 5-39.67 8.5Q667.67-374 648-374q-113.86 0-193.93-80.07Q374-534.14 374-648q0-19.67 3.5-39.33Q381-707 386-727q-75.85 31.45-122.93 98.22Q216-562 216-480q0 110 77 187t187 77Zm-14-250Z"/></svg> Dark Mode</button>
+            </div>
+        </div>
+    </nav> 
             <!-- Navbar -->
       <header class="navbar">
           <div class="logo">Apple<strong>KH</strong> Real Estate</div>
@@ -220,7 +249,52 @@
     
    
     
-    
+    <script>const filterBtn = document.getElementById("filterBtn");
+const filterMenu = document.getElementById("filterMenu");
+
+filterBtn.addEventListener("click", () => {
+    filterMenu.style.display =
+        filterMenu.style.display === "block" ? "none" : "block";
+});
+
+document.addEventListener("click", (e) => {
+    if (!filterBtn.contains(e.target) && !filterMenu.contains(e.target)) {
+        filterMenu.style.display = "none";
+    }
+});
+function showSidebar(){
+            const sidebar = document.querySelector('.nav__sidebar__container')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const hidebar = document.querySelector('.nav__sidebar__container')
+            hidebar.style.display = 'none'
+        }
+
+        new SlimSelect({
+            select: '#selectPurpose'
+        })
+
+        new SlimSelect({
+            select: '#selectType'
+        })
+        const darkModeToggle = document.getElementById('darkModeToggle');
+
+        // load saved mode
+        if (localStorage.getItem('mode') === 'dark') {
+            document.body.classList.add('dark__mode');
+        }
+
+        // toggle mode
+        darkModeToggle.onclick = () => {
+            document.body.classList.toggle('dark__mode');
+
+            if (document.body.classList.contains('dark__mode')) {
+                localStorage.setItem('mode', 'dark');
+            } else {
+                localStorage.setItem('mode', 'light');
+            }
+        };</script>
       
 </body>
 </html>

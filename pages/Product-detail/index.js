@@ -133,4 +133,50 @@ function createCard(item)
     `;
    
 }
+const filterBtn = document.getElementById("filterBtn");
+const filterMenu = document.getElementById("filterMenu");
+
+filterBtn.addEventListener("click", () => {
+    filterMenu.style.display =
+        filterMenu.style.display === "block" ? "none" : "block";
+});
+
+document.addEventListener("click", (e) => {
+    if (!filterBtn.contains(e.target) && !filterMenu.contains(e.target)) {
+        filterMenu.style.display = "none";
+    }
+});
+function showSidebar(){
+            const sidebar = document.querySelector('.nav__sidebar__container')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const hidebar = document.querySelector('.nav__sidebar__container')
+            hidebar.style.display = 'none'
+        }
+
+        new SlimSelect({
+            select: '#selectPurpose'
+        })
+
+        new SlimSelect({
+            select: '#selectType'
+        })
+        const darkModeToggle = document.getElementById('darkModeToggle');
+
+        // load saved mode
+        if (localStorage.getItem('mode') === 'dark') {
+            document.body.classList.add('dark__mode');
+        }
+
+        // toggle mode
+        darkModeToggle.onclick = () => {
+            document.body.classList.toggle('dark__mode');
+
+            if (document.body.classList.contains('dark__mode')) {
+                localStorage.setItem('mode', 'dark');
+            } else {
+                localStorage.setItem('mode', 'light');
+            }
+        };
 

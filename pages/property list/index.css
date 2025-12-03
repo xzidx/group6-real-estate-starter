@@ -80,6 +80,7 @@ button {
 .nav__link {
   display: flex;
   align-items: center;
+  color: black;
 }
 
 .menu__button {
